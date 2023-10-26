@@ -1,0 +1,442 @@
+@font-face{
+    src:url(../font/Bellota-Bold.ttf);
+    font-family:"Bellota-Bold";
+}
+@font-face{
+    src:url(../font/Bellota-BoldItalic.ttf);
+    font-family:"Bellota-BoldItalic";
+}
+@font-face{
+    src:url(../font/Bellota-Italic.ttf);
+    font-family:"Bellota-Italic";
+}
+@font-face{
+    src:url(../font/Bellota-Light.ttf);
+    font-family:"Bellota-Light";
+}
+@font-face{
+    src:url(../font/Bellota-LightItalic.ttf);
+    font-family:"Bellota-LightItalic";
+}
+@font-face{
+    src:url(../font/Bellota-Regular.ttf);
+    font-family:"Bellota-Regular";
+}
+
+.navbar a, .about h1, .menu h1, .gallery h1, .testimonials h1, .contact h1{
+    font-family: "Bellota-Bold";
+}
+
+.navbar a, .about h1, .menu h1, .gallery h1{
+    color:#894f2d;
+}
+
+
+.navbar ul li a {
+    margin: 25px;
+}
+
+.navbar ul li a:hover {
+    background: #e7b96f;
+}
+
+
+.home-banner {
+    background: url(../images/home-banner.png)center;
+    height: 468px;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.about {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(221, 212, 212);
+}
+
+.about img {
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: 80%;
+    height: 350px;
+}
+
+.about img:hover {
+    transform: scale(1.1)
+}
+
+.about-text {
+    width: 90%;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu-box ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-box ul p {
+    border-bottom: 1px dashed #e7b96f;
+    font-size: 17px;
+}
+
+.menu-box p, h5 {
+    padding-bottom: 12px;
+}
+
+.menu {
+    margin-bottom: 70px;
+}
+
+.menu-box {
+    height: 350px;
+    width: 85%;
+    overflow: auto;
+    scrollbar-color: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.menu-box::-webkit-scrollbar {
+    width:6px;
+}
+div.menu-box::-webkit-scrollbar-thumb {
+    background: #e7b96f;
+}
+
+
+.carousel-item .d-block {
+    width: 100%;
+}
+
+.testimonials {
+    background: #eac17a;
+    height: auto;
+}
+
+.testimonials .container{
+    padding-bottom: 40px;
+}
+
+.testimonials-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.testimonials .box {
+    font-size: 17px;
+    width:75%;
+    background: white;
+    padding:20px;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.carousel-item .d-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 350px;
+}
+
+.gallery-box {
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.gallery {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.gallery-box img {
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.33);
+}
+
+
+.contact {
+    background: url(../images/contact.png) center;
+    color: white;
+    height: auto;
+    background-size: cover;
+}
+
+.about .container, .menu .container, .testimonials .container, .gallery .container, .contact .container{
+    padding:10px 50px;
+}
+
+.contact ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.contact .social li i {
+    padding-left: 10px;
+}
+
+.social li {
+    float: left;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+    background: white;
+}
+
+.social li i {
+    font-size: 36px;
+    color: black;
+}
+
+.form-group input {
+    background: 0 !important;
+}
+
+.form-group input::placeholder {
+    color: white;
+}
+
+.row .btn {
+    background: #894f2d !important;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    margin-left:auto;
+}
+
+#first-logo{
+    display:none;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+    .home-banner{
+        height: 150px;
+    }
+
+    .navbar ul li a{
+        margin:0px;
+        padding-left:130px;  
+    }
+
+    #first-logo{
+        display:block;
+    }
+    #second-logo{
+        display:none;
+    }
+    
+    .navbar-brand img{
+        margin-left: 110px; 
+    }
+
+    .about img{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100%;
+        height:200px;
+    }
+    
+    .about-text{
+        margin-top:25px;
+        width:100% !important;
+    }
+
+    .menu .carousel-inner{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        height:200px;
+    }
+
+    .menu-box{
+        margin-top:30px;
+        width:100%;
+    }
+
+    .testimonials .box{
+        width: 100% !important;
+    }
+
+    .about .about-title, .menu .about-title, .testimonials .testimonials-title, .gallery .about-title, .contact .about-title{
+        padding: 0 !important;
+        margin: 20px 0px;
+    }
+
+    .gallery .container{
+        padding: 0 !important;
+    }
+
+    .contact #form{
+        padding-top:20px;
+        padding-bottom:15px
+    }
+
+    .gallery-box {
+        column-count: 2;
+        column-gap: 10px;
+        margin:10px !important;
+    }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+    .home-banner{
+        height: 200px;
+    }
+
+    .navbar ul li a{
+        margin:0px;
+        padding-left:260px; 
+    }
+
+    #first-logo{
+        display:block;
+    }
+    #second-logo{
+        display:none;
+    }
+
+    .navbar-brand img{
+        margin-left: 240px; 
+    }
+
+    .about img{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100%;
+    }
+    
+    .about-text{
+        margin-top:25px;
+        width:100% !important;
+    }
+
+    .menu .carousel-inner{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .menu-box{
+        margin-top:30px;
+        width:100%;
+    }
+
+    .testimonials .box{
+        width: 100% !important;
+    }
+
+    .about .about-title, .menu .about-title, .testimonials .testimonials-title, .gallery .about-title, .contact .about-title{
+        padding: 0 !important;
+        margin: 20px 0px;
+    }
+
+    .gallery .container{
+        padding: 0 !important;
+    }
+
+    .contact #form{
+        padding-top:20px;
+        padding-bottom:15px
+    }
+
+    .gallery-box {
+        column-count: 2;
+        column-gap: 10px;
+        margin:10px !important;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .navbar ul li a{
+        margin:0px;
+        padding-left:370px;
+    }
+
+    #first-logo{
+        display:block;
+    }
+
+    #second-logo{
+        display:none;
+    }
+
+    .navbar-brand img{
+        margin-left: 350px; 
+    }
+
+    .home-banner{
+        height: 200px;
+    }
+
+    .about img{
+        width: 100% !important;
+        margin-top:40px;
+    }
+    
+    .about-text{
+        margin-top:25px;
+        width:100% !important;
+    }
+
+    .menu .carousel-inner{
+        width: 100% !important;
+        margin-top:30px;
+    }
+
+    .menu-box{
+        margin-top:30px;
+        width:100% !important;
+    }
+
+    .testimonials .box{
+        width: 100% !important;
+    }
+
+    .about .about-title, .menu .about-title, .testimonials .testimonials-title, .gallery .about-title, .contact .about-title{
+        padding: 0 !important;
+        margin: 20px 0px;
+    }
+
+    .about .container, .menu .container, .testimonials .container, .gallery .container, .contact .container{
+        padding:10px 5px;
+    }
+
+    .contact #form{
+        padding-top:20px;
+        padding-bottom:15px
+    }
+
+    .gallery-box {
+        column-count: 2;
+        column-gap: 10px;
+        margin:10px !important;
+    }
+
+}
